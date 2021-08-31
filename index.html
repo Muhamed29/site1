@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body style="position: absolute;">
+    <button id="myBtn" onclick="topFunction()" class="text-white bg-indigo-800 rounded m-7 pl-5 pr-5 fixed" style="z-index: 2;bottom: 20px; right: 30px;">Top</button>
+    <div >
+        <div style="background-image:url(/img/1.jpg); background-size: 100% 120%; height: 600px;">
+            <nav>
+                <label class="font-styleScript text-5xl text-white ml-6 mt-7">Design</label>
+                <ul class="float-right inline-flex mr-3 ">
+                    <li class="ml-3 mt-1 border-0 rounded p-1 text-white hover:text-gray-400 hover:bg-white transition ease-in hover:duration-200 cursor-pointer font-serif text-lg"><a href="#home" id="home">Home</a></li>
+                    <li class="ml-3 mt-1 border-0 rounded p-1 text-white hover:text-gray-400 hover:bg-white transition ease-in hover:duration-200 cursor-pointer font-serif text-lg"><a href="#about">About</a></li>
+                    <li class="ml-3 mt-1 border-0 rounded p-1 text-white hover:text-gray-400 hover:bg-white transition ease-in hover:duration-200 cursor-pointer font-serif text-lg"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div>
+                <p class="animate-pulse text-gray-400 grid justify-items-center leading-loose text-6xl p-48 font-serif">Welcome To Our Site</p>
+            </div>
+        </div>
+    </div>
+    <div class="grid grid-cols-2 justify-between" id="about">
+        <div class=" m-7 shadow-xl bg-gray-200">
+            <h3 class=" grid justify-items-center font-serif text-4xl m-5 underline"> what we do</h3>
+            <p class=" font-serif text-2xl m-5 leading-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. In fugiat tempora, cupiditate illo deleniti ipsum officia atque dolores similique minus soluta assumenda suscipit culpa hic ipsa voluptatibus modi sapiente ut.</p>
+        </div>
+        <div class=" m-7 shadow-xl bg-gray-200 ">
+            <h3 class=" grid justify-items-center font-serif text-4xl m-5 underline">About</h3>
+            <p class="font-serif text-2xl m-5 leading-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta cumque itaque soluta magni laboriosam optio! Laborum rerum molestiae quaerat tempore rem, soluta totam, repellat quod id eum libero autem quos.</p>
+        </div>
+    </div>
+        <footer class="grid grid-cols-2 justify-between" style="background-image: url(/img/andrea.jpg); background-size: 100% 100%;" id="contact">
+            <div class=" m-24 leading-7" >
+            <form class="m-12" action="connect.php" method="POST">
+                <label for="fname" class="font-serif text-white">First name:</label><br>
+                <input type="text" id="fname" name="fname" value="" class="border-2 rounded shadow-lg opacity-60"><br>
+                <label for="lname" class="font-serif text-white">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value="" class="border-2 rounded shadow-lg opacity-60"><br>
+                <label for="number" class="font-serif text-white">Number:</label><br>
+                <input type="number" id="number" name="number" value="" class="border-2 rounded opacity-60 shadow-lg"><br>
+                <label for="email" class="font-serif text-white">Email:</label><br>
+                <input type="text" id="email" name="email" value="" class="border-2 opacity-60 rounded shadow-lg"><br>
+                <label for="request" class="font-serif text-white">Your Request:</label><br>
+                <textarea type="text" id="request" name="request" rows="4" cols="50" class="border-2 rounded shadow-lg opacity-60"></textarea><br><br>
+                <input type="submit" value="Submit" class="font-serif border-2 rounded shadow-lg bg-blue-400 float-right pl-3 pr-3  opacity-70">
+              </form>
+            </div>
+            <div class="float-right leading-3 m-32" >
+                <h2 class="text-white font-serif text-lg">Telephone:</h2>
+                <h2 class="text-white font-serif text-lg">0123456789</h2>
+            </div>
+            
+        </footer>
+        
+    </div>
+<script src="/js/app.js"></script>
+</body>
+</html>
